@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <!-- -->
+        <h1> Calculadora de IMC </h1>
+        <!-- -->
+    </header>
+    <!-- Main -->
+    <main>
+        <section>
+            <!-- Campos de interacao -->
+            <h2> Insira os dados para o calculo do IMC</h2>
+            <!-- Input para peso -->
+            <label for="peso">Insira seu peso em Kilogramas</label>
+            <input type="text" id="peso" required>
+            <p class="example">Exemplo: 85.99</p>
+            <br>
+            <!-- Input para Metros-->
+            <label for="altura">Insira sua altura em centimetros</label>
+            <input type="text" id="altura" required>
+            <p class="example">Exemplo: 172 em centimetros</p>
+            <br>
+            <!-- Botao para envio de dados-->
+            <button class="submit-button" onclick="calcularImc() "> Calcular </button>
+            <!-- Exibicao de resultado-->
+        </section>
+        <section>
+            <h2> Resultado</h2>
+            <p id="resultado"></p>
+            <hr>
+            <p id="resultadoPonderado"></p>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <!-- Direitos Reservados -->
+        <p>&copy; 2024 Meu Site. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>

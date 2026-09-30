@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grao a Grao</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="brand">
+                <!-- Title -->
+                <button class="logo" type="button" onclick="window.location.href='index.html'">
+                    <img src="coffee_grain.png" alt="Imagem Descricao">
+                </button>
+                <h1 class="title_header">Grão a Grão</h1>
+            </div>
+            <!-- Menu -->
+            <nav class="menu">
+                <button type="button" onclick="window.location.href='index.html'">Home</button>
+                <button type="button" onclick="window.location.href='contact.html'">Contact</button>
+            </nav>
+            <!-- Search -->
+        </div>
+
+    </header>
+
+    <main class="main_layout">
+        <aside>
+            <h2>Informações</h2>
+            <p>Conteúdo adicional.</p>
+            <p>Conteúdo adicional.
+                Nesta regiao fica disponivel uma serie de conteudos adicionais que podem ser utilizados para
+                complementar a informacao principal da pagina.
+            </p>
+            <form>
+                <label for="cafe">Escolha o tipo de café que deseja comentar: </label>
+                <select id="cafe" name="cafe">
+                    <option value="Extraforte">Extra Fortes</option>
+                    <option value="Gourmet">Gourmet</option>
+                    <option value="Especiais">Especiais</option>
+                </select>
+                <br>
+                <label for="Resenha">Resenha: </label>
+                <br>
+                <textarea id="Resenha" name="Resenha" rows="4" cols="30" required></textarea>
+                <br>
+                <label for="email">Digite seu e-mail para receber novidades: </label>
+                <br>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <button class="submit-button" type="submit">Enviar</button>
+            </form>
+        </aside>
+        <div class="content_box">
+            <section>
+                <article>
+                    <h2>Bem-vindo ao Grão a Grão</h2>
+                    <p>Estamos aqui para ajudar! Entre em contato conosco através dos canais abaixo:
+                        <br><br>
+                        <strong>Telefone:</strong> (11) 1234-5678
+                        <br>
+                        <strong>Email:</strong> contato@graoagrao.com
+                        <br>
+                        <strong>Endereço:</strong> Rua do Café, 123 - São Paulo/SP
+                    </p>
+                </article>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p style="font-size: 12px; margin: 1em; text-align: center;">&copy; 2024 Grao a Grao. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

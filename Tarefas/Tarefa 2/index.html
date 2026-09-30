@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sobre Cafes </title>
+</head>
+
+<body>
+    <header>
+        <img src="image.png" width="75" height="75" alt="descrição da imagem"> 
+        <h1 style="display: inline";> CAFES ESPECIAIS</h1>
+        <hr>
+        <nav>
+            <!--  Menu -->
+            <a href="index.html">Inicio</a> <span> | </span>
+            <a href="#cafes">Cafes Especiais</a> <span> | </span>
+            <a href="#moagem">Moagem</a> <span> | </span>
+            <a href="#avalie">Avalie seu Café</a> <span> | </span>
+            <a href="#contato">Contato</a>
+        </nav>
+        <hr>
+    </header>
+    <main>
+        <section id="cafes">
+            <!-- Conteudo sobre Cafes  -->
+            <h2>Cafes Especiais: O que sao? </h2>
+            <p>Quando pensamos em tomar um Bom cafe logo surge uma duvida: <strong>Qual o melhor tipo de cafe para mim?</strong> </p>
+            <p>Quando entramos no mundo do cafes, nos deparamos com diversas opções e características que podem influenciar nossa escolha, entender a diferença entre os tipos de cafe é
+                fundamental para encontrar o que melhor se adapta às nossas preferências. </p>
+            <!-- Classificacao dos Cafes -->
+            <h3>Classificação dos Cafes</h3>
+            <p>Os Cafes podem ser classificados de acordo com sua origem e qualidade dos graos, processo de torragem, método de preparo e perfil de sabor. <br>
+               Cada tipo de cafe possui características únicas que podem agradar diferentes paladares. A classificacao dos cafes eh divida em:</p>
+            <ul style="list-style-type: none; font-size: 1.1em;">
+                <li><a href="#Extraforte">Extra Fortes</a></li>
+                <li><a href="#Gourmet">Gourmet</a></li>
+                <li><a href="#Especiais">Especiais</a></li>
+            </ul>
+            <section id="Extraforte">
+                <h4>Extra Fortes</h4>
+                <p>Os Cafes Extra Fortes são conhecidos por seu sabor intenso. Esses cafes sao vendidos como mais intensos e mais robustos, porem a realidade possuem um gosto queimado. <br>
+                   Comumente sao Cafes com uma grande quantidade de graos defeituosos e um sabor inconstante. </p>
+                   <h4>Características</h4>
+                   <p>
+                    <ul>
+                        <li>Sabor Intenso queimado</li>
+                        <li>Aroma Intenso com leve toque de queimado</li>
+                        <li>Sem presenca de oleos</li>
+                    </ul>
+                   </p>
+            </section>
+            <section id="Gourmet">
+                <h4>Gourmet</h4>
+                <p>Os Cafes Gourmet são conhecidos por seu sabor único e apresentação sofisticada. Eles são ideais para quem aprecia uma experiência de cafe mais elaborada.</p>
+                <h4>Características</h4>
+                    <p>
+                        <ul>
+                            <li>Sabor que varia conforme o tipo de grão e o processo de torra podendo ser leve ou intenso </li>
+                            <li>Aromas que incluem diversas notas, de caramelos a ervas</li>
+                            <li>Presenca de Oleos Moderada a alta</li>
+                        </ul>
+                    </p>
+            </section>
+            <section id="Especiais">
+                <h4>Especiais</h4>
+                <p>Os Cafes Especiais são conhecidos por sua produção artesanal e ingredientes selecionados. Eles são ideais para quem busca uma experiência de cafe diferenciada.</p>
+                <h4>Características</h4>
+                    <p>
+                        <ul>
+                            <li>Sabor que varia conforme o tipo de grão e o processo de torra podendo ser leve ou intenso, com a mais alta pureza. </li>
+                            <li>Aromas que incluem diversas notas, de caramelos a ervas e mix de especiarias nobres alterando as percepcoes ofativas</li>
+                            <li>Presenca de Oleos Moderada a alta</li>
+                        </ul>
+                    </p>
+            </section>
+        </section>
+
+        <!-- Moagem -->
+        <section id="moagem">
+            <h3>Qual Moagem escolher?</h3>
+            <p>A moagem do café é um passo crucial que influencia diretamente no sabor e na qualidade do produto final. Existem diversos tipos de moagem, cada um adequado para diferentes métodos de preparo:</p>
+            <ul>
+                <li><strong>Moagem Grossa:</strong> Ideal para o método de filtro francês (French Press). Permite que a água se lave mais lentamente pelo café, resultando em um sabor mais intenso.</li>
+                <li><strong>Moagem Média:</strong> Adequada para a maioria dos métodos de preparo, como o filtro (Drip) e a máquina de expresso (Espresso). Oferece um equilíbrio entre o tempo de extração e o sabor.</li>
+                <li><strong>Moagem Fina:</strong> Recomendada para o método de expresso. A maior superfície exposta ao vapor da água permite uma extração mais rápida e intensa.</li>
+            </ul>
+        </section>
+        <section id="avalie">
+        <hr>
+        <h3>Avalie seu Café</h3>
+        <form>
+            <label for="cafe">Escolha o tipo de café que deseja comentar: </label>
+            <select id="cafe" name="cafe">
+                <option value="Extraforte">Extra Fortes</option>
+                <option value="Gourmet">Gourmet</option>
+                <option value="Especiais">Especiais</option>
+            </select>
+            <br>
+            <label for="Resenha">Resenha: </label>
+            <br>
+            <textarea id="Resenha" name="Resenha" rows="4" cols="50" required></textarea>
+            <br>
+            <label for="email">Digite seu e-mail para receber novidades: </label>
+            <br>
+            <input type="email" id="email" name="email" required>
+            <button type="submit">Enviar</button>   
+        </form>
+        <hr>
+        </section>            
+        
+    </main>   
+    <footer id="contato">
+        <h3>Contato</h3>
+        <p>Você pode entrar em contato comigo através do seguinte e-mail: <a href="mailto:XXXXXXX@XXXXX.com">XXXXXXX@XXXXX.com</a></p>
+        <p>Telefone: (11) 4002-8922</p>
+        <p>&copy; 2024 Davi. Todos os direitos reservados.</p>
+    </footer> 
+</body>
+</html>

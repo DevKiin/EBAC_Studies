@@ -1,0 +1,209 @@
+/*Fonts*/
+@font-face {
+    font-family: 'title1';
+    src: url('../../GraoGrao/fonts/titles1.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'title2';
+    src: url('../../GraoGrao/fonts/titles2.woff') format('woff');
+}
+
+/*General style Elements*/
+* {
+    margin: 0 0 0 10px;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-family: 'title2', cursive, sans-serif;
+    text-align: center;
+    font-size: 3em;
+}
+
+p {
+    font-family: 'arial', sans-serif;
+    text-align: center;
+    font-size: 1.25em;
+}
+
+body {
+    min-width: 1200px;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #f8ecd7, #f1d3a9);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+/*Header style elements*/
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #4d2b15;
+    margin: 0 15em 0 15em;
+    border-radius: 10px;
+    outline: none;
+    background-image: url('imagem.jpg');
+    background-size: clamp(300px, 60vw, 900px) auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.brand {
+    margin: 5px 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4d2b15;
+}
+
+.logo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: #4d2b15;
+    outline: none;
+}
+
+.logo:hover {
+    background-color: transparent;
+    border-radius: 50%;
+}
+
+.logo img {
+    margin: 0 0 0 0;
+    height: 50px;
+    width: 50px;
+    background-color: #cabdab;
+    border-radius: 50%;
+}
+
+.title_header {
+    margin: 10px 10px 10px 10px;
+    line-height: 1;
+    font-family: 'title1', cursive;
+    font-size: clamp(32px, 4vw, 38px);
+    color: #cabdab;
+    text-shadow: 2px 2px 4px #776555;
+    background-color: #4d2b15;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #4d2b15;
+}
+
+.menu button {
+    font-family: 'title2', serif;
+    font-size: 1.25em;
+    text-decoration: none;
+    background-color: #4d2b15;
+    color: #e6e1da;
+    margin: 0.25em 1em 0.25em 1em;
+    outline: none;
+}
+
+.menu button:hover {
+    background-color: #8f8074;
+    border-radius: 7px;
+}
+
+/*Content style elements*/
+.main_layout {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.content_box {
+    display: flex;
+    flex-direction: column;
+    padding: 1em 0 1em 0;
+    margin: 0;
+    background-color: #fbfcfc;
+    outline: 2px solid #4d2b15;
+    width: 750px;
+}
+aside {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    background-color: #fbfcfc;
+    outline: 2px solid #4d2b15;
+    box-shadow: 0px 0px 5px #8f5f3f;
+    padding: 0.5em;
+    align-items: center;
+    width: 400px;
+    border-radius: 0;
+}
+
+label {
+    font-family: 'arial', sans-serif;
+    font-size: 1em;
+    padding: 0.5em;
+    margin: 0 0 0.5em 0.5em;
+}
+select {
+    font-family: 'arial', sans-serif;
+    font-size: 1em;
+    padding: 0.5em;
+    margin: 0 0 0.5em 0.5em;
+    border-radius: 10px;
+    outline: 2px solid #4d2b15;
+    width: 350px;
+}
+textarea {
+    font-family: 'arial', sans-serif;
+    font-size: 1em;
+    padding: 0.5em;
+    margin: 0 0 0 0.5em;
+    border-radius: 10px;
+    outline: 2px solid #4d2b15;
+    width: 350px;
+}
+
+input {
+    font-family: 'arial', sans-serif;
+    font-size: 1em;
+    padding: 0.5em;
+    margin: 0.5em 0 0 0.5em;
+    border-radius: 10px;
+    outline: 2px solid #4d2b15;
+    width: 350px;
+}
+
+.submit-button {
+    font-family: 'title2', serif;
+    font-size: 2em;
+    text-decoration: none;
+    background-color: #4d2b15;
+    color: #e6e1da;
+    margin: 0.25em 1em 0.25em 1em;
+    outline: 2px solid #4d2b15;
+    border-radius: 10px;
+    text-align: center;
+    width: 80%;
+    height: 50px;
+}
+.submit-button:hover {
+    background-color: #8f8074;
+    border-radius: 7px;
+}
+
+article {
+    box-shadow: 0px 0px 5px #8f5f3f;
+    padding: 0.5em;
+    margin: 0 1em 1em 1em;
+    border-radius: 5px;
+}
+
+/*Footer style elements*/

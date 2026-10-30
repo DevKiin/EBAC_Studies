@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="advinha.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <!-- -->
+        <h1> Advinhe o numero aleatorio </h1>
+        <!-- -->
+    </header>
+    <!-- Main -->
+    <main>
+        <section>
+            <!-- Campos de interacao -->
+            <h2> Adivinhe o número </h2>
+            <!-- Input para o número digitado -->
+            <label for="valorDigitado">Chute um palpite (1-100)</label>
+            <input type="text" id="valorDigitado" required>
+            <p class="example">Exemplo: 50</p>
+            <br>
+            <!-- Botao para envio de dados-->
+            <button class="submit-button" onclick="verificarValor()"> Chutar </button>
+            <!-- Exibicao de resultado-->
+        </section>
+        <section>
+            <h2> Resultado</h2>
+            <p id="resultado"></p>
+            <hr>
+            <p id="tentativas"></p>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <!-- Direitos Reservados -->
+        <p>&copy; 2024 Meu Site. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>

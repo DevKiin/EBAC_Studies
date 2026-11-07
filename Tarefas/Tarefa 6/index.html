@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parquimetro Online</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Parquimetro Online</h1>
+        <p>Bem-vindo ao Parquimetro Online!</p>
+    </header>
+    <main>
+        <h2>Calculadora de Parquimetro</h2>
+        <p>Digite o valor em reais para calcular o tempo de estacionamento.</p>
+        <!-- Seção de cálculo do parquímetro -->
+        <div class="parquimetro-calculator">
+            <section>
+                <form id="parquimetroForm">
+                    <label for="valor">Digite o valor em reais:</label>
+                    <input type="number" id="valor" name="valor" step="0.01" required>
+                    <button type="submit">Calcular</button>
+                </form>
+            </section>
+        </div>
+        <p id="resultado"></p>
+        <div class="cronometro-container">
+            <h2>Tempo Restante </h2>
+            <p id="cronometro">00:00:00</p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Parquimetro Online. Todos os direitos reservados.</p>
+    </footer>
+
+
+</body>
+
+</html>

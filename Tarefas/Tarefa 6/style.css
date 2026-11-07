@@ -1,0 +1,204 @@
+/* Paleta inspirada no azul escuro e no azul claro do parquímetro. */
+:root {
+    --azul-fundo: #071b2c;
+    --azul-header: #0d2f49;
+    --azul-destaque: #0f6edb;
+    --azul-destaque-hover: #0b5caf;
+    --azul-claro: #eaf6ff;
+    --texto-claro: #f4f9ff;
+    --texto-suave: #b9d2e6;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background: var(--azul-fundo);
+    color: var(--texto-claro);
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    line-height: 1.5;
+}
+
+header {
+    padding: 2.5rem 1.5rem;
+    text-align: center;
+    background: var(--azul-header);
+    border-bottom: 1px solid #245273;
+    box-shadow: 0 4px 16px rgb(0 0 0 / 22%);
+}
+
+h1,
+h2,
+p {
+    margin-top: 0;
+}
+
+h1 {
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
+    letter-spacing: 0.02em;
+}
+
+header p,
+main > p,
+footer p {
+    color: var(--texto-suave);
+}
+
+main {
+    position: relative;
+    width: min(100% - 2rem, 760px);
+    margin: 2rem auto;
+    padding: 2rem 2rem 13rem;
+    flex: 1;
+    background: #0b263d;
+    border: 1px solid #1f4a68;
+    border-radius: 14px;
+    box-shadow: 0 12px 30px rgb(0 0 0 / 25%);
+}
+
+main > h2 {
+    color: #d9efff;
+}
+
+.parquimetro-calculator {
+    margin-top: 1.75rem;
+    padding: 2rem;
+    background: var(--azul-claro);
+    color: #12324b;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgb(0 0 0 / 18%);
+}
+
+.parquimetro-calculator h2 {
+    color: #0a426d;
+}
+
+.parquimetro-calculator p {
+    color: #36566e;
+}
+
+form {
+    display: grid;
+    gap: 0.6rem;
+}
+
+label {
+    font-weight: 600;
+}
+
+input {
+    width: 100%;
+    padding: 0.8rem 0.9rem;
+    border: 2px solid #b5d5e9;
+    border-radius: 7px;
+    background: #ffffff;
+    color: #12324b;
+    font: inherit;
+}
+
+input:focus {
+    outline: 3px solid rgb(15 110 219 / 25%);
+    border-color: var(--azul-destaque);
+}
+
+button {
+    margin-top: 0.5rem;
+    padding: 0.8rem 1rem;
+    border: 0;
+    border-radius: 7px;
+    background: var(--azul-destaque);
+    color: #ffffff;
+    cursor: pointer;
+    font: inherit;
+    font-weight: 700;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: var(--azul-destaque-hover);
+    transform: translateY(-1px);
+}
+
+button:focus-visible {
+    outline: 3px solid #77c2ff;
+    outline-offset: 2px;
+}
+
+#resultado {
+    margin: 1.5rem auto 0;
+    padding: 1rem 1.25rem;
+    max-width: 680px;
+    border-radius: 10px;
+    background: var(--azul-claro);
+    color: #082b46;
+    text-align: center;
+    font-size: clamp(1.25rem, 3vw, 1.8rem);
+    line-height: 1.35;
+    font-weight: 700;
+}
+
+.cronometro-container {
+    position: absolute;
+    left: 2rem;
+    right: 2rem;
+    bottom: 1.5rem;
+    z-index: 10;
+    width: auto;
+    margin: 0;
+    padding: 1.5rem;
+    text-align: center;
+    background: var(--azul-header);
+    color: var(--texto-claro);
+    border: 1px solid #245273;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgb(0 0 0 / 18%);
+}
+
+.cronometro-container h2 {
+    margin-bottom: 0.75rem;
+    color: #d9efff;
+    font-size: clamp(1.25rem, 3vw, 1.7rem);
+}
+
+.cronometro-container #cronometro {
+    margin-bottom: 0;
+    color: #ffffff;
+    font-size: clamp(2rem, 7vw, 3.5rem);
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    line-height: 1.2;
+}
+
+footer {
+    padding: 1.25rem;
+    text-align: center;
+    background: #061625;
+}
+
+footer p {
+    margin-bottom: 0;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 520px) {
+    main {
+        padding: 1.25rem 1.25rem 12rem;
+    }
+
+    .parquimetro-calculator {
+        padding: 1.25rem;
+    }
+
+    .cronometro-container {
+        left: 1.25rem;
+        right: 1.25rem;
+        bottom: 1rem;
+    }
+}
